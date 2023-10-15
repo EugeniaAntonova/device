@@ -21,6 +21,13 @@
   src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100vh;
 }
@@ -57,6 +64,7 @@ html {
 
 .button {
   position: relative;
+  z-index: 2;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -147,6 +155,15 @@ html {
 
 .log-out {
   opacity: 0.3;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 47px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -321,6 +338,11 @@ html {
   color: #fff;
 }
 
+.footer-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .footer-top-wrapper,
 .footer-bottom-wrapper {
   width: 1160px;
@@ -363,6 +385,17 @@ html {
   background-color: #FFC700;
 }
 /* catalog breadcrumbs */
+.catalog-top-container {
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 .breadcrumbs-item {
   color: #000;
   font-size: 16px;
@@ -373,6 +406,40 @@ html {
 }
 
 /* catalog */
+.contents {
+  background-color: #f0f0f0;
+}
+
+.contents-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.devices {
+  width: 840px;
+  background-color: #fff;
+  padding-bottom: 78px;
+}
+
+.devices-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 0 40px;
+}
+.goods-list {
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 70px 40px 0;
+  gap: 40px
+
+}
 .minor-title {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -383,6 +450,10 @@ html {
 }
 
 /* filter */
+.filter {
+  width: 320px;
+  padding-left: 60px;
+}
 .filter-form label span {
   font-size: 16px;
   font-weight: 400;
@@ -409,6 +480,10 @@ html {
 }
 
 /* catalog cards */
+.good-card {
+  display: flex;
+  flex-direction: column;
+}
 .good-name,
 .good-name-link {
   font-weight: 700;
@@ -420,6 +495,9 @@ html {
 
 /* catalog pagination */
 .pagination {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
   background-color: #EBEBEB;
 }
 
@@ -433,6 +511,13 @@ html {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .pagination-link {
