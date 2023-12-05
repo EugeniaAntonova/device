@@ -11,10 +11,10 @@
   <body class="page">
     <header class="page-header index-main">
       <nav class="main-nav">
+        <a href="/" class="logo" title="Вернуться на главную">
+          <img src="/img/logo-black.svg" alt="Логотип магазина Девайс" class="logo-img" width="145" height="36">
+        </a>
         <div class="nav-top-wrapper">
-          <a href="/" class="logo" title="Вернуться на главную">
-            <img src="/img/logo-black.svg" alt="Логотип магазина Девайс" class="logo-img" width="145" height="36">
-          </a>
           <form class="search-form" aria-label="поиск по сайту" action="https://echo.htmlacademy.ru/" method="get">
             <label class="search-label">
               <span class="visually-hidden">
@@ -58,40 +58,42 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин электронных устройств Девавйс</h1>
-      <section class="hero">
-        <ol class="slider-list">
+      <section class="section hero">
+        <div class="slider-wrapper">
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущий девайс</span>
           </button>
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующий девайс</span>
           </button>
-          <li class="slider-item">
-            <span class="slider-item-nubmer">01</span>
-            <article class="good-card">
-              <img src="/img//slider/slider-1.png" alt="Квадракоптер с какими-то характеристиками" class="good-img" width="560" height="560">
-              <div class="good-content">
-                <h2 class="visually-hidden">Квадракоптер какой-то там</h2>
-                <p class="good-slogan section-title">
-                  Порхает как бабочка, жалит как пчела!
-                </p>
-                <p class="good-description">
-                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <a href="#" class="button button--slider" title="Перейти на страницу товара">Подробнее</a>
-                <table class="good-table">
-                  <tr>
-                    <td><b>800м</b></td>
-                    <td><b>50м</b></td>
-                  </tr>
-                  <tr>
-                    <td>Дальность полета</td>
-                    <td>Радиус поражения</td>
-                  </tr>
-                </table>
-              </div>
-            </article>
-          </li>
+          <ol class="slider-list">
+            <li class="slider-item">
+              <span class="slider-item-nubmer">01</span>
+              <article class="slider-card">
+                <img src="/img//slider/slider-1.png" alt="Квадракоптер с какими-то характеристиками" class="slider-img" width="560" height="560">
+                <div class="slider-content">
+                  <h2 class="visually-hidden">Квадракоптер какой-то там</h2>
+                  <p class="slider-slogan section-title">
+                    Порхает как бабочка, жалит как пчела!
+                  </p>
+                  <p class="slider-description">
+                    Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                  <a href="#" class="button" title="Перейти на страницу товара">Подробнее</a>
+                  <table class="slider-table">
+                    <tr>
+                      <td><b>800м</b></td>
+                      <td><b>50м</b></td>
+                    </tr>
+                    <tr>
+                      <td>Дальность полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </article>
+            </li>
+          </ol>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -109,9 +111,9 @@
               </button>
             </li>
           </ol>
-        </ol>
+        </div>
       </section>
-      <section class="categories">
+      <section class="section categories">
         <h2 class="visually-hidden">
           Категории устройств в магазине
         </h2>
@@ -148,7 +150,7 @@
           </li>
         </ul>
       </section>
-      <section class="services">
+      <section class="section services">
         <h2 class="visually-hidden">Сервисы доступные в магазине</h2>
         <div class="services-container">
           <ul class="services-list">
@@ -187,7 +189,7 @@
         </a>
       </section>
       <div class="about-contacts-wrapper">
-        <section class="about">
+        <section class="section about">
           <h2 class="about-heading section-title">
             О нас
           </h2>
@@ -206,8 +208,8 @@
             Подробнее о нас
           </a>
         </section>
-        <section class="contacts">
-          <h2 class="section-title">Контакты</h2>
+        <section class="section contacts">
+          <h2 class="section-title contacts-title">Контакты</h2>
           <p class="contacts-descr">
             Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.
           </p>
@@ -230,7 +232,7 @@
           </a>
         </section>
       </div>
-      <section class="newsletter">
+      <section class="section newsletter">
         <div class="newsletter-container">
           <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p>
