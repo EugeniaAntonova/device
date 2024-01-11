@@ -34,6 +34,7 @@ img {
 }
 
 a, button {
+  padding: 0;
   text-decoration: none;
   color: inherit;
   border: none;
@@ -197,6 +198,7 @@ html {
 
 /* hero */
 .slider-wrapper {
+  position: relative;
   width: 1160px;
   margin: 0 auto;
 }
@@ -205,7 +207,6 @@ html {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-
 }
 .slider-card {
   display: flex;
@@ -216,6 +217,8 @@ html {
 
 .slider-content {
   padding-left: 40px;
+  padding-bottom: 36px;
+  align-self: flex-end;
 }
 
 .slider-slogan {
@@ -244,11 +247,33 @@ html {
 }
 
 .slider-pagination {
+  position: absolute;
+  right: 0;
+  bottom: 173px;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  gap: 20px;
+  display: inline-block;
+}
+
+.slider-pagination-item {
+  display: inline-block;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-pagination button {
+  /* display: inline-block; */
+  width: 12px;
+  height: 12px;
+  border-radius: 50% 50%;
+  border: 2px solid black;
+}
+
+.slider-pagination-button-current {
+  background-color: #000;
 }
 /* categories */
 .categories-list {
@@ -591,9 +616,10 @@ html {
 }
 
 #goods-button {
-  display: inline-block;
-  margin: 0 40px;
+  margin-inline: 40px;
+  margin-bottom: 44px;
   padding: 18px;
+  border: 3px solid #E5E5E5;
 }
 .minor-title {
   margin: 0;
@@ -604,6 +630,7 @@ html {
   text-transform: uppercase;
   color: #000;
 }
+
 
 /* filter */
 .filter {
@@ -662,13 +689,14 @@ html {
 /* catalog pagination */
 .pagination {
   margin: 0 40px;
-  padding: 15.5px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #EBEBEB;
 }
 
 .pagination-control {
+  padding: 25px;
   color: #000;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
